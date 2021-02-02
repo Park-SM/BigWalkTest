@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="campaign"
+            type="com.smparkworld.bigwalktest.data.Campaign" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        tools:context=".ui.donation.DonationActivity">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="@dimen/campaign_list_item_img_width"
+                android:layout_height="@dimen/campaign_list_item_img_width"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                app:setImage="@{campaign}" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_donation_completed"
+                android:visibility="@{(campaign.isClose() &amp;&amp; campaign.my.story) ? View.VISIBLE : View.INVISIBLE}"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{campaign.name}"
+                android:textColor="@{campaign.isClose() ? @color/campaign_list_item_closed_text : @color/black}"
+                android:textSize="@dimen/campaign_list_item_main_text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{campaign.promoter.name}"
+                android:textColor="@{campaign.isClose() ? @color/campaign_list_item_closed_text : @color/gray}"
+                android:textSize="@dimen/campaign_list_item_sub_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/shape_campaign_type_open"
+                    android:text="공개형"
+                    android:textSize="@dimen/campaign_type_text_size"
+                    android:textColor="@color/white"
+                    android:visibility="@{campaign.organizations.isEmpty() ? View.VISIBLE : View.GONE}" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/shape_campaign_type_group"
+                    android:text="그룹형"
+                    android:textSize="@dimen/campaign_type_text_size"
+                    android:textColor="@color/white"
+                    android:visibility="@{campaign.organizations.isEmpty() ? View.GONE : View.VISIBLE}" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@{Integer.toString(campaign.ratio) + '%'}"
+                    android:textSize="@dimen/campaign_list_item_progress_ratio_text_size"
+                    android:textColor="@color/campaign_list_item_progress" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|bottom"
+                    android:text="@{campaign.isClose() ? (campaign.my.story ? @string/complete : @string/close) : @string/ongoing}"
+                    android:textColor="@{campaign.isClose() ? (campaign.my.story ? @color/complete : @color/close) : @color/ongoing}"
+                    android:textSize="@dimen/campaign_list_item_progress_state_text_size" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/campaign_list_item_progress_height"
+                android:max="100"
+                android:progress="@{campaign.ratio}"
+                android:progressDrawable="@drawable/layer_campaign_progressbar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/btn_donation_med_n"
+            android:visibility="@{campaign.isClose() ? View.INVISIBLE : View.VISIBLE}"/>
+
+    </LinearLayout>
+
+</layout>

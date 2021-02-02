@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BigWalkTest</string>
+
+    <string name="firebase_web_client_id">454037575510-9qg8h9olvtco5l1taaohvctscb1md6r9.apps.googleusercontent.com</string>
+
+    <string name="app_introduce">세상을 움직일 선한 발걸음\n빅워크와 함께하세요!</string>
+
+    <string name="close">종료</string>
+    <string name="ongoing">진행중</string>
+    <string name="complete">기부완료</string>
+</resources>

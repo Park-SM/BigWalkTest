@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/campaign_list_item_progress_corner" />
+            <solid android:color="@color/campaign_list_item_progress_back" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/campaign_list_item_progress_corner" />
+                <solid android:color="@color/campaign_list_item_progress" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

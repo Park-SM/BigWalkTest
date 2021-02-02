@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="blue">#4379e7</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#666666</color>
+    <color name="bright_gray">#CDCDCD</color>
+    <color name="alphaGray">#AA878787</color>
+
+    <color name="view_divide_line">#F3F3F3</color>
+
+    <color name="tab_selected_text">#000000</color>
+    <color name="tab_not_selected_text">@color/gray</color>
+
+    <color name="campaign_type_open">#00aa9e</color>
+    <color name="campaign_type_group">#ffcc52</color>
+
+    <color name="campaign_list_item_progress">@color/blue</color>
+    <color name="campaign_list_item_progress_back">@color/bright_gray</color>
+
+    <color name="campaign_list_item_closed_text">#CDCDCD</color>
+
+    <color name="close">#e03535</color>
+    <color name="ongoing">#4379e7</color>
+    <color name="complete">#7758b3</color>
+</resources>

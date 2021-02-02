@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="2dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingBottom="2dp"
+    android:background="@drawable/shape_campaign_type_open"
+    android:text="공개형"
+    android:textSize="@dimen/campaign_type_text_size"
+    android:textColor="@color/white" />

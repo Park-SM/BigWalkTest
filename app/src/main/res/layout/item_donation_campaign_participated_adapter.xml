@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <data>
+        <variable
+            name="campaign"
+            type="com.smparkworld.bigwalktest.data.Campaign" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="@dimen/campaign_participated_item_img_width"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="@dimen/campaign_participated_item_img_width"
+                android:layout_height="@dimen/campaign_participated_item_img_height"
+                app:setImage="@{campaign}"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{campaign.name}"
+                android:textSize="@dimen/campaign_participated_item_text"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/campaign_participated_item_img_height"
+            android:scaleType="center"
+            android:src="@mipmap/btn_donation_med_n" />
+
+    </FrameLayout>
+
+</layout>
