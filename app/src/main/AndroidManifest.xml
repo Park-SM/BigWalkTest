@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BigWalkTest">
-        <activity android:name="com.smparkworld.bigwalktest.ui.login.LoginActivity">
+        <activity android:name="com.smparkworld.bigwalktest.ui.donation.DonationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.smparkworld.bigwalktest.ui.donation.DonationActivity" />
+        <activity android:name="com.smparkworld.bigwalktest.ui.login.LoginActivity" />
     </application>
 
 </manifest>
