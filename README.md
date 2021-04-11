@@ -15,9 +15,9 @@ Kotlin, MVVM, Retrofit2
 ### #3 결과물
 <table>
  <tr>
-  <td><img width="324px" height="666px" src="https://user-images.githubusercontent.com/47319426/114313806-05ed3080-9b33-11eb-86fe-4181a14a6b89.jpg"></td>
-  <td><img width="324px" height="666px" src="https://user-images.githubusercontent.com/47319426/114313713-8d866f80-9b32-11eb-906b-fa7cde43e925.jpg"></td>
-  <td><img width="324px" height="666px" src="https://user-images.githubusercontent.com/47319426/114313898-71cf9900-9b33-11eb-90f1-0da897ff639d.jpg"></td>
+  <td><img style="max-width: 100%; height: auto" src="https://user-images.githubusercontent.com/47319426/114313806-05ed3080-9b33-11eb-86fe-4181a14a6b89.jpg"></td>
+  <td><img style="max-width: 100%; height: auto" src="https://user-images.githubusercontent.com/47319426/114313713-8d866f80-9b32-11eb-906b-fa7cde43e925.jpg"></td>
+  <td><img style="max-width: 100%; height: auto" src="https://user-images.githubusercontent.com/47319426/114313898-71cf9900-9b33-11eb-90f1-0da897ff639d.jpg"></td>
  </tr>
  <tr>
   <td align="center">실제 BigWalk 앱 화면</td>
@@ -25,9 +25,9 @@ Kotlin, MVVM, Retrofit2
   <td align="center">Firebase 통한 SNS 로그인 (디자인자유)</td>
  </tr>
  <tr>
-  <td><img width="324px" height="666px" src="https://user-images.githubusercontent.com/47319426/114313947-a2173780-9b33-11eb-8f92-c8c46d8a416c.jpg"></td>
-  <td><img width="324px" height="666px" src="https://user-images.githubusercontent.com/47319426/114313957-ab080900-9b33-11eb-8b39-e49c831a31ba.jpg"></td>
-  <td><img width="324px" height="666px" src="https://user-images.githubusercontent.com/47319426/114313964-b0fdea00-9b33-11eb-8319-b1b9071f8759.jpg"></td>
+  <td><img style="max-width: 100%; height: auto" src="https://user-images.githubusercontent.com/47319426/114313947-a2173780-9b33-11eb-8f92-c8c46d8a416c.jpg"></td>
+  <td><img style="max-width: 100%; height: auto" src="https://user-images.githubusercontent.com/47319426/114313957-ab080900-9b33-11eb-8b39-e49c831a31ba.jpg"></td>
+  <td><img style="max-width: 100%; height: auto" src="https://user-images.githubusercontent.com/47319426/114313964-b0fdea00-9b33-11eb-8319-b1b9071f8759.jpg"></td>
  </tr>
  <tr>
   <td align="center">공개형, 그룹형 필터링 (디자인자유)</td>
